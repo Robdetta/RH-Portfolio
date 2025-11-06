@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Catte: The Multiplayer Card Game",
+    "subtitle": "Work in Progress",
+    "description": "Using React, Colyseus, and Phaser.js to build a multiplayer card game",
+    "image": "/MovieGameTheQuiz.png",
+    "tech": ["React", "Colyseus", "Phaser.js"],
+    "github": "https://github.com/Robdetta/Catte",
+    "demo": null,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Movie Quiz Game",
+    "subtitle": "Completed",
+    "description": "Interactive quiz game built with vanilla JavaScript and HTML5",
+    "image": "/MovieGameTheQuiz.png",
+    "tech": ["JavaScript", "HTML5", "CSS3"],
+    "github": "https://github.com/Robdetta/Movie-Quiz-Game",
+    "demo": "https://robdetta.github.io/Movie-Quiz-Game/",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Deckroidvania",
+    "subtitle": "Game Development",
+    "description": "A roguelike deck-building game with metroidvania elements. Combines strategic card game mechanics with exploration-based gameplay.",
+    "image": "/TrashTheCar.png",
+    "tech": ["Godot", "GDScript", "Game Design"],
+    "github": "https://github.com/Robdetta/Deckroidvania",
+    "demo": null,
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Brewtrail",
+    "subtitle": "Mobile Application",
+    "description": "A mobile app for discovering local breweries and craft beer experiences. Features location-based recommendations and user reviews.",
+    "image": "/Brewtrail.png",
+    "tech": ["React Native", "Firebase", "Maps API"],
+    "github": "https://github.com/Robdetta/Brewtrail",
+    "demo": null,
+    "featured": true
+  }
+]

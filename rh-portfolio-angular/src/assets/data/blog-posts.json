@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Deep Dive: Building Real-Time Multiplayer Games with Colyseus",
+    "category": "Engineering",
+    "date": "2025-11-06",
+    "excerpt": "An analysis of using Colyseus for real-time state synchronization in multiplayer games and how it compares to traditional WebSocket implementations.",
+    "slug": "colyseus-multiplayer-games",
+    "content": "# Building Real-Time Multiplayer Games with Colyseus\n\nColyseus is a powerful framework for building multiplayer games with real-time synchronization. In this deep dive, we explore...",
+    "tags": ["gaming", "real-time", "javascript"]
+  },
+  {
+    "id": 2,
+    "title": "The Art of the Technical Design Document: From Idea to Implementation",
+    "category": "Leadership",
+    "date": "2025-10-15",
+    "excerpt": "How clear documentation and communication are crucial for team velocity and successful project handoffs. Showcases organizational skills.",
+    "slug": "technical-design-documents",
+    "content": "# The Art of the Technical Design Document\n\nA well-written technical design document can be the difference between a smooth project and chaos. Here's what I've learned...",
+    "tags": ["documentation", "leadership", "best-practices"]
+  },
+  {
+    "id": 3,
+    "title": "Exploring the Potential of WebAssembly in Modern Front-ends",
+    "category": "Future Tech",
+    "date": "2025-09-01",
+    "excerpt": "My first experiments compiling Rust to WASM and the performance improvements achieved in CPU-intensive tasks. Shows continuous learning!",
+    "slug": "webassembly-frontend",
+    "content": "# WebAssembly in Modern Front-ends\n\nWebAssembly is opening new possibilities for front-end development. Let me share my experiments...",
+    "tags": ["webassembly", "rust", "performance"]
+  }
+]

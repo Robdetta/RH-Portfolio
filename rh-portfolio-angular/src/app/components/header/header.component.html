@@ -1,0 +1,38 @@
+<!-- Header & Navigation -->
+<header class="sticky top-0 z-50 bg-gray-800 bg-opacity-95 shadow-lg backdrop-blur-sm border-b border-gray-700">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo/Name -->
+      <a href="#home" class="text-2xl font-bold text-indigo-500 tracking-wider">
+        Robbie Hem
+      </a>
+      
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-8">
+        <button (click)="scrollToSection('home')" class="text-gray-300 hover:text-indigo-400 transition duration-300 bg-none border-none cursor-pointer">Home</button>
+        <button (click)="scrollToSection('portfolio')" class="text-gray-300 hover:text-indigo-400 transition duration-300 bg-none border-none cursor-pointer">Portfolio</button>
+        <button (click)="scrollToSection('blog')" class="text-gray-300 hover:text-indigo-400 transition duration-300 bg-none border-none cursor-pointer">Blog</button>
+        <button (click)="scrollToSection('contact')" class="px-3 py-1 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Contact</button>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <button 
+        (click)="toggleMobileMenu()" 
+        class="md:hidden p-2 rounded-lg text-gray-300 hover:bg-gray-700 focus:outline-none transition duration-300 bg-none border-none cursor-pointer">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Mobile Menu Dropdown -->
+  <div *ngIf="mobileMenuOpen()" class="md:hidden bg-gray-800 transition-all duration-300 ease-in-out border-t border-gray-700">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <button (click)="scrollToSection('home')" class="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 bg-none border-none cursor-pointer">Home</button>
+      <button (click)="scrollToSection('portfolio')" class="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 bg-none border-none cursor-pointer">Portfolio</button>
+      <button (click)="scrollToSection('blog')" class="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 bg-none border-none cursor-pointer">Blog</button>
+      <button (click)="scrollToSection('contact')" class="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 mt-1 bg-none border-none cursor-pointer">Contact</button>
+    </div>
+  </div>
+</header>
