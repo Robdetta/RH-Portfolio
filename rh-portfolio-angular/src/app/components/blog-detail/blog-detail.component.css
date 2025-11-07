@@ -1,0 +1,11 @@
+:host ::ng-deep .prose {
+  line-height: 1.8;
+}
+
+:host ::ng-deep .prose h2 {
+  @apply text-2xl font-bold text-white mt-8 mb-4;
+}
+
+:host ::ng-deep .prose p {
+  @apply text-gray-300 mb-4;
+}
