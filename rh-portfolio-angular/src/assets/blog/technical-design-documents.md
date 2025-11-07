@@ -9,6 +9,7 @@ Think of it as a blueprint for software. It communicates the "what" and "how" to
 ## Why Does This Matter?
 
 In my experience, teams that invest time in writing clear technical design documents:
+
 - Complete projects faster
 - Have fewer misunderstandings
 - Produce higher quality code
@@ -19,31 +20,37 @@ In my experience, teams that invest time in writing clear technical design docum
 A comprehensive technical design document should include:
 
 ### 1. Problem Statement
+
 - What problem are we solving?
 - Who are the stakeholders?
 - What are the success metrics?
 
 ### 2. Architecture Diagram
+
 - Visual representation of the system
 - Component interactions
 - Data flow
 
 ### 3. Data Models
+
 - Database schema
 - API contract
 - Data structures
 
 ### 4. APIs
+
 - REST endpoints or GraphQL queries
 - Request/response formats
 - Error handling
 
 ### 5. Timeline
+
 - Estimated effort
 - Major milestones
 - Dependencies
 
 ### 6. Risk Analysis
+
 - What could go wrong?
 - Mitigation strategies
 - Contingency plans
@@ -63,6 +70,7 @@ On one project, we spent an extra 8 hours writing a detailed TDD. This upfront i
 ## Impact on Teams
 
 Good documentation leads to:
+
 - **Better team alignment** - Everyone understands the vision
 - **Faster implementation** - Developers know exactly what to build
 - **Fewer bugs** - Edge cases are thought through beforehand

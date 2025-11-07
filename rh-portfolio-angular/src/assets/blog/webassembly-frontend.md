@@ -7,6 +7,7 @@ WebAssembly (WASM) is a binary instruction format that enables near-native perfo
 WebAssembly is a portable, size- and load-time-efficient format suitable for compilation to the web. It's designed to run at near-native speed by taking advantage of common hardware capabilities.
 
 ### Key Characteristics:
+
 - **Binary format** - Compact and efficient
 - **Browser compatible** - Works in all modern browsers
 - **Language agnostic** - Can be compiled from many languages
@@ -15,11 +16,13 @@ WebAssembly is a portable, size- and load-time-efficient format suitable for com
 ## Why Use WebAssembly?
 
 ### Performance
+
 - Near-native execution speeds
 - Ideal for computationally intensive tasks
 - 10-100x faster than JavaScript for CPU-bound operations
 
 ### Use Cases:
+
 - Image processing
 - Video encoding
 - Machine learning models
@@ -30,6 +33,7 @@ WebAssembly is a portable, size- and load-time-efficient format suitable for com
 ## Building with Rust
 
 Rust is the ideal language for WebAssembly development because of its:
+
 - Strong type system
 - Memory safety guarantees
 - Performance characteristics
@@ -55,6 +59,7 @@ wasm-pack build --target web
 I built a simple Mandelbrot set renderer in Rust and compiled it to WebAssembly. Here's what I discovered:
 
 ### Setup
+
 ```rust
 use wasm_bindgen::prelude::*;
 
@@ -65,6 +70,7 @@ pub fn calculate_mandelbrot(max_iterations: u32) -> Vec<u8> {
 ```
 
 ### Integration
+
 ```javascript
 import init, { calculate_mandelbrot } from './pkg/mandelbrot.js';
 
@@ -79,10 +85,10 @@ async function renderMandelbrot() {
 
 My implementation achieved impressive results:
 
-| Operation | JavaScript | WebAssembly | Speedup |
-|-----------|-----------|-------------|---------|
-| Mandelbrot (100 iterations) | 450ms | 50ms | **9x** |
-| Mandelbrot (1000 iterations) | 4500ms | 450ms | **10x** |
+| Operation                    | JavaScript | WebAssembly | Speedup |
+| ---------------------------- | ---------- | ----------- | ------- |
+| Mandelbrot (100 iterations)  | 450ms      | 50ms        | **9x**  |
+| Mandelbrot (1000 iterations) | 4500ms     | 450ms       | **10x** |
 
 A **40% overall performance improvement** compared to the previous JavaScript-only solution!
 
@@ -104,6 +110,7 @@ A **40% overall performance improvement** compared to the previous JavaScript-on
 ## The Future
 
 WebAssembly is rapidly evolving with:
+
 - Component Model (better composability)
 - Garbage collection (easier for high-level languages)
 - SIMD support (vectorized operations)

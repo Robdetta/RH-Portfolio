@@ -4,10 +4,11 @@ import { RouterModule } from '@angular/router';
 import { BlogService, BlogPost } from '../../services/blog.service';
 
 @Component({
-    selector: 'app-blog-all',
-    imports: [CommonModule, RouterModule],
-    templateUrl: './blog-all.component.html',
-    styleUrl: './blog-all.component.css'
+  selector: 'app-blog-all',
+  standalone: true,
+  imports: [CommonModule, RouterModule],
+  templateUrl: './blog-all.component.html',
+  styleUrl: './blog-all.component.css',
 })
 export class BlogAllComponent implements OnInit {
   blogPosts: BlogPost[] = [];
@@ -15,7 +16,6 @@ export class BlogAllComponent implements OnInit {
   constructor(private blogService: BlogService) {}
 
   ngOnInit(): void {
-    // Show ALL blog posts
     this.blogPosts = this.blogService.getAllPosts();
   }
 }
