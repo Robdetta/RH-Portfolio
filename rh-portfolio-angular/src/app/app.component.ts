@@ -4,6 +4,7 @@ import { RouterModule, Router } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 import { HeroComponent } from './components/hero/hero.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { ContactComponent } from './components/contact/contact.component';
 //import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @Component({
@@ -15,7 +16,7 @@ import { BlogComponent } from './components/blog/blog.component';
     MarkdownModule,
     HeroComponent,
     BlogComponent,
-    //PortfolioComponent,
+    ContactComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
