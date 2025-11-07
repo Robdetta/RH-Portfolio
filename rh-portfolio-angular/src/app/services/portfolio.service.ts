@@ -39,7 +39,7 @@ export class PortfolioService {
       title: 'Catte',
       description:
         'An online multiplayer card game built with vanilla JavaScript and WebSockets. Supports real-time multiplayer gameplay, strategic card mechanics, and smooth cross-browser compatibility.',
-      image: 'assets/projects/catte.jpg',
+      image: 'assets/images/Catte.png',
       technologies: ['JavaScript', 'WebSockets', 'HTML5', 'CSS3'],
       githubUrl: 'https://github.com/Robdetta/Catte',
     },
