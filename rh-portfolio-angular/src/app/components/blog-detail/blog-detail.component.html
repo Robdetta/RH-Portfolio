@@ -1,5 +1,5 @@
 <section class="py-20 min-h-screen">
-  <div class="max-w-3xl mx-auto">
+  <div class="max-w-3xl mx-auto px-4">
     <div *ngIf="post; else notFound">
       <a
         routerLink="/"
@@ -26,14 +26,13 @@
           <span class="text-sm text-primary mb-4 block"
             >{{ post.category }} • {{ post.date }}</span
           >
-          <h1 class="text-5xl sm:text-6xl font-extrabold text-white mb-6">
-            {{ post.title }}
-          </h1>
-          <p class="text-xl text-gray-400">{{ post.description }}</p>
+          <p class="text-xl text-gray-400 mb-6">{{ post.description }}</p>
         </header>
 
-        <div class="prose prose-invert max-w-none text-gray-300 mb-12">
-          <div [innerHTML]="post.content"></div>
+        <div
+          class="prose prose-invert max-w-none text-gray-300 mb-12 markdown-content"
+        >
+          <markdown [data]="markdownContent"></markdown>
         </div>
 
         <footer class="border-t border-tertiary pt-8">
