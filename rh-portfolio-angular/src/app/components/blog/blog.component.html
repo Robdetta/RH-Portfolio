@@ -1,0 +1,40 @@
+<section
+  id="blog"
+  class="py-20 border-t border-tertiary"
+>
+  <h2 class="section-title text-4xl font-bold text-white">
+    Latest Insights & Blog
+  </h2>
+  <p class="text-gray-400 mb-10 text-xl">
+    My writings on engineering principles, new technology, and solving hard
+    problems.
+  </p>
+
+  <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div
+      *ngFor="let post of blogPosts"
+      class="bg-secondary p-6 rounded-2xl shadow-xl hover:shadow-primary/30 transition duration-300 border border-tertiary flex flex-col"
+    >
+      <span class="text-sm text-primary mb-2"
+        >{{ post.category }} • {{ post.date }}</span
+      >
+      <h3 class="text-2xl font-semibold text-white mb-3">{{ post.title }}</h3>
+      <p class="text-gray-300 mb-6 flex-grow">{{ post.description }}</p>
+      <a
+        [routerLink]="['/blog', post.slug]"
+        class="text-md font-semibold text-primary hover:text-indigo-400 cursor-pointer"
+      >
+        Read Article &rarr;
+      </a>
+    </div>
+  </div>
+
+  <div class="text-center mt-12">
+    <a
+      routerLink="/blog"
+      class="inline-block px-6 py-2 text-md font-semibold text-primary border border-primary rounded-xl hover:bg-primary hover:text-white transition duration-300 cursor-pointer"
+    >
+      View All Posts
+    </a>
+  </div>
+</section>
