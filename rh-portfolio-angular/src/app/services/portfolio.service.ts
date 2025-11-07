@@ -20,7 +20,7 @@ export class PortfolioService {
       title: 'BrewTrail',
       description:
         'A social media platform for craft beer enthusiasts to discover, review, and share their favorite breweries. Features real-time updates, user authentication, and integration with the Open Brewery API for comprehensive brewery data.',
-      image: 'assets/projects/brewtrail.jpg',
+      image: 'assets/images/Brewtrail.png',
       technologies: ['React', 'Node.js', 'PostgeSQL', 'Open Brewery API'],
       githubUrl: 'https://github.com/Robdetta/brewtrail',
       liveUrl: 'https://brewtrail.robbiehem.dev',
@@ -30,7 +30,7 @@ export class PortfolioService {
       title: 'DeckroidVania',
       description:
         'A 2.5D action-adventure game built in Godot with C#. Features dynamic combat mechanics, intricate level design, and immersive gameplay inspired by classic metroidvania titles.',
-      image: 'assets/projects/deckroidvania.jpg',
+      image: 'assets/images/Deckroidvania.png',
       technologies: ['Godot', 'C#', 'Game Design'],
       githubUrl: 'https://github.com/Robdetta/DeckroidVania',
     },
@@ -48,9 +48,10 @@ export class PortfolioService {
       title: 'Typing Game',
       description:
         'An engaging typing speed test game with real-time performance metrics, difficulty levels, and leaderboard functionality. Built to improve typing skills through interactive gameplay.',
-      image: 'assets/projects/typing-game.jpg',
+      image: 'assets/images/TrashTheCar.png',
       technologies: ['JavaScript', 'HTML5', 'CSS3'],
       githubUrl: 'https://github.com/Robdetta/Typing-Game',
+      liveUrl: 'https://robdetta.github.io/Typing-Game/',
     },
   ];
 

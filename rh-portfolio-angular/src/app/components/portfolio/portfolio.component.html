@@ -6,15 +6,15 @@
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
     <div
       *ngFor="let project of projects"
-      class="bg-secondary p-6 rounded-2xl shadow-xl hover:shadow-primary/30 transition duration-300 border border-tertiary overflow-hidden group"
+      class="bg-secondary p-6 rounded-2xl shadow-xl hover:shadow-primary/30 transition duration-300 border border-tertiary overflow-hidden"
     >
       <!-- Project Image -->
       <div class="mb-4 h-48 bg-tertiary rounded-lg overflow-hidden">
         <img
           [src]="project.image"
           [alt]="project.title"
-          class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-          (error)="$event.target.src = 'assets/projects/placeholder.jpg'"
+          class="w-full h-full object-cover"
+          (error)="$event.target.src = 'assets/images/placeholder.jpg'"
         />
       </div>
 
