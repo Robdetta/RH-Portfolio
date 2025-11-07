@@ -5,7 +5,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { HeroComponent } from './components/hero/hero.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
-//import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
     HeroComponent,
     BlogComponent,
     ContactComponent,
+    PortfolioComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
