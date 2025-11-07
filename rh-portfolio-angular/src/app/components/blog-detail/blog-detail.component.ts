@@ -5,11 +5,10 @@ import { MarkdownModule } from 'ngx-markdown';
 import { BlogService, BlogPost } from '../../services/blog.service';
 
 @Component({
-  selector: 'app-blog-detail',
-  standalone: true,
-  imports: [CommonModule, RouterModule, MarkdownModule],
-  templateUrl: './blog-detail.component.html',
-  styleUrl: './blog-detail.component.css',
+    selector: 'app-blog-detail',
+    imports: [CommonModule, RouterModule, MarkdownModule],
+    templateUrl: './blog-detail.component.html',
+    styleUrl: './blog-detail.component.css'
 })
 export class BlogDetailComponent implements OnInit {
   post: BlogPost | undefined;

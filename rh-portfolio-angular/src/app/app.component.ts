@@ -6,17 +6,16 @@ import { HeroComponent } from './components/hero/hero.component';
 import { BlogComponent } from './components/blog/blog.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-    MarkdownModule,
-    HeroComponent,
-    BlogComponent,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+    selector: 'app-root',
+    imports: [
+        CommonModule,
+        RouterModule,
+        MarkdownModule,
+        HeroComponent,
+        BlogComponent,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
   title = 'Your Portfolio';
