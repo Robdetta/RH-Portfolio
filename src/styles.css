@@ -7,14 +7,41 @@
 /* stylelint-disable-next-line */
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #030712;
-  color: #f3f4f6;
-  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #4c1d95 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Optional: Add subtle animated gradient */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* For an animated gradient effect (optional) */
+body.animated-bg {
+  background: linear-gradient(-45deg, #030712, #0f172a, #1e1b4b, #312e81);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
 }
 
 .section-title {
