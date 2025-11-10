@@ -190,3 +190,16 @@ Component displays the post using the HTML template
 | `blog-detail.component.html` | Layout of single post | Change how post looks |
 | `app.routes.ts`              | URL routing           | Add new routes        |
 | `_redirects`                 | Netlify config        | (Don't edit for blog) |
+
+Place your image in the assets folder:
+For example:
+src/assets/blog/cat-detection.jpg
+
+Reference it in your markdown file:
+![Cat Detection Example](assets/blog/cat-detection.jpg)
+
+The path should be relative to the src folder, so assets/blog/your-image.jpg works.
+Optional: Add captions or adjust size with HTML if needed:
+<img src="assets/blog/cat-detection.jpg" alt="Cat Detection Example" width="600" />
+
+<figcaption>Frigate detecting a cat in the living room.</figcaption>

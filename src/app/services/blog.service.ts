@@ -50,6 +50,16 @@ export class BlogService {
         'My first experiments compiling Rust to WASM and the performance improvements achieved in CPU-intensive tasks. Shows continuous learning!',
       markdownFile: 'assets/blog/webassembly-frontend.md',
     },
+    {
+      id: 4,
+      slug: 'frigate-with-nvidia-gpu',
+      title: 'Using Frigate with NVIDIA GPU for Real-Time Cat Detection',
+      category: 'Engineering',
+      date: '2025-11-09',
+      description:
+        'Learn how I used Frigate with an NVIDIA GPU to achieve real-time cat detection. Exploring the setup, performance, and practical applications of this approach.',
+      markdownFile: 'assets/blog/frigate-with-nvidia-gpu.md',
+    },
   ];
 
   constructor(private http: HttpClient) {}
