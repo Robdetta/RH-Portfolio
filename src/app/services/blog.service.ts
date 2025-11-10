@@ -21,13 +21,13 @@ export class BlogService {
   private posts: BlogPost[] = [
     {
       id: 1,
-      slug: 'react-state-management',
-      title: 'Deep Dive: Optimizing React State Management with Zustand',
+      slug: 'building-blog-without-cms',
+      title: 'Building a Blog Without a CMS: A Modern Alternative',
       category: 'Engineering',
-      date: 'Oct 28, 2025',
+      date: '2025-11-09',
       description:
-        'An analysis of using lightweight state management tools to reduce boilerplate and improve component re-renders compared to older patterns.',
-      markdownFile: 'assets/blog/react-state-management.md',
+        'Learn how I built a blogging system using Markdown, Angular, and Git instead of traditional CMS platforms. Exploring the pros, cons, and architecture behind this approach.',
+      markdownFile: 'assets/blog/building-blog-without-cms.md',
     },
     {
       id: 2,
