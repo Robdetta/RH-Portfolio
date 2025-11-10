@@ -82,3 +82,7 @@ body.animated-bg {
 .animate-fadeIn {
   animation: fadeIn 0.6s ease-in-out;
 }
+
+.bg-dark {
+  background: #18181b;
+}
