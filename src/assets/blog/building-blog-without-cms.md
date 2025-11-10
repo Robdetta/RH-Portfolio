@@ -329,8 +329,6 @@ If you're a developer considering this path, I'd say: **try it**. The barrier to
 
 ---
 
-**Have you built a blog without a CMS? What approach did you take? Drop a comment below!**
-
 ### Resources
 
 - [ngx-markdown Documentation](https://jfcere.github.io/ngx-markdown/)
