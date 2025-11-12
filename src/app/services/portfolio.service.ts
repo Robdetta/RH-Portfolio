@@ -23,7 +23,7 @@ export class PortfolioService {
       image: 'assets/images/Brewtrail.png',
       technologies: ['React', 'Node.js', 'PostgeSQL', 'Open Brewery API'],
       githubUrl: 'https://github.com/Robdetta/brewtrail',
-      liveUrl: 'https://brewtrail.robbiehem.dev',
+      // liveUrl: 'https://brewtrail.robbiehem.dev',
     },
     {
       id: 2,
